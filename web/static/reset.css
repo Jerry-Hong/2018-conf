@@ -132,4 +132,9 @@ table {
 button {
 	background-color: transparent;
 	outline: none;
+	cursor: pointer;
+}
+
+* {
+	box-sizing: border-box;
 }

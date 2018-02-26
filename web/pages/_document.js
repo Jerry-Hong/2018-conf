@@ -1,5 +1,5 @@
-import Document, { Head, Main, NextScript } from "next/document"
-import { ServerStyleSheet } from "styled-components"
+import Document, { Head, Main, NextScript } from 'next/document'
+import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
 	static getInitialProps({ renderPage }) {
@@ -21,15 +21,16 @@ export default class MyDocument extends Document {
 						name="viewport"
 						content="width=device-width, initial-scale=1.0"
 					/>
-					<link rel="stylesheet" href="/static/reset.css"/>
-					<style>{`
-						*:not(.icon){
-							font-family:微軟正黑體,Lato,Helvetica Neue,Arial,Helvetica,sans-serif!important;
-						}
-						body{
-							font-size: 16px;
-						}
-					`}</style>
+					<link href="/static/reset.css" rel="stylesheet" />
+					<link
+						href="https://fonts.googleapis.com/css?family=Barlow:400,500,700"
+						rel="stylesheet"
+					/>
+					<style>
+						{`body{
+							background-color: #311e6d;								
+						}`}
+					</style>
 					{this.props.styleTags}
 				</Head>
 				<body>
